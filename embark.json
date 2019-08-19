@@ -1,0 +1,24 @@
+{
+  "contracts": ["contracts/**"],
+  "app": {},
+  "buildDir": "dist/",
+  "config": {
+    "contracts": "contracts.js",
+    "blockchain": false,
+    "storage": false,
+    "communication": false,
+    "webserver": false
+  },
+  "versions": {
+    "solc": "0.5.11"
+  },
+  "plugins": {
+    "embark-solium": {}
+  },
+  "options": {
+    "solc": {
+      "optimize": true,
+      "optimize-runs": 200
+    }
+  }
+}
