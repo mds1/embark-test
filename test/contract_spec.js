@@ -36,6 +36,7 @@ contract('FloatifyAccount', (accounts) => {
   // ===============================================================================================
 
   it('should properly set owner on deployment', async () => {
+    // console.log(await web3.eth.getBalance('0xc4EAF72BC568D82Bd82E7A1C1c0d0Fc536984DC7'));
     const contractOwner = await FloatifyAccount.owner();
     assert.strictEqual(owner, contractOwner);
   });
